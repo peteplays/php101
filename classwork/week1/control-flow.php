@@ -6,7 +6,7 @@
   <body>
     <p>
       <?php
-        $students = 8;
+        $students = 4;
         if ($students > 5) {
           echo "Holy crap thats a lot of students!";
         } else {

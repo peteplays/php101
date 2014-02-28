@@ -4,7 +4,7 @@
     <title>Semicolon Comment!</title>
   </head>
   <body>
-  <p><?php echo "Fix this string" ?></p>
-  <p><?php echo "Comment me out"; ?></p>
+  <p><?php echo "Fix this string"; ?></p>
+  <p><?php //echo "Comment me out"; ?></p> //comment out has to be inside PHP tags
   </body>
 </html>

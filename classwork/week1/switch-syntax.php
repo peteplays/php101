@@ -11,7 +11,7 @@
     switch ($class) {
         case 'Php 101':
             echo "Is Awesome!";
-            default;
+            break;
     }
     ?>
   </body>

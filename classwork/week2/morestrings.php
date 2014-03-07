@@ -16,6 +16,22 @@
       // check to see if "?" exists
       // with the position of "?" return a substring of the query arguments
       // print out each query string as a formatted string
+
+
+      
+      foreach($urls as $url) {
+        $lastIdx = strlen($url);
+        $idx = strpos($url, "?");
+
+        if ($idx != false ) {
+          echo '<p>' . trim(substr ($url, $idx + 1, $lastIdx + 1)) . '</p>';
+
+        }
+
+      }
+
+
+
     ?>
   </body>
 </html>

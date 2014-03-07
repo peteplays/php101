@@ -6,9 +6,9 @@
   <body>
     <?php
     // fill in the __ spots with the correct syntax
-      __ ($i = 2__ $i < 11; $i = $i + 2__ __
-        echo $i;
-      __
+      for ($i = 2; $i < 11; $i = $i + 2) {
+              echo "<p>$i</p>";
+      }
     ?>
   </body>
 </html>

@@ -53,6 +53,45 @@
         // assign the value of the bet to the bet key
         // print out the name, and bet of each player
         // print out the winner of the hand
+
+      foreach($pokerPlayers as $key => $player) {
+         
+          foreach($player as $prop => $value) {
+
+          $playerCard = array();
+
+          if(is_array($value)) {
+            foreach ($value as $hand => $card) {
+            $playerCard[$hand] = $card;
+            }
+          } 
+          if($player['name'] == 'Tom') {
+          $player['bet'] = 75;
+          $player['balacne'] = $player['balacne'] - $player['bet'];
+          }
+
+          if($player['name'] == 'Frank') {
+            $player['bet'] = 300;
+            $player['balacne'] = $player['balacne'] - $player['bet'];
+          }
+
+          if($player['name'] == 'Dick') {
+            $player['bet'] = 10;
+            $player['balacne'] = $player['balacne'] - $player['bet'];
+          }
+
+          if($player['name'] == 'Harry') {
+            $player['bet'] = 13;
+            $player['balacne'] = $player['balacne'] - $player['bet'];
+          }
+       
+       //echo $player['name'] . ' : ' . $player['bet'];
+      // echo "</br>";
+       echo "<p>" . $playerCard['face'] . ' ' . $playerCard['card'] . "</p>";
+
+      }
+    }
+  
     ?>
   </body>
 </html>

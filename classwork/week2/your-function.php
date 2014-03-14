@@ -11,16 +11,38 @@
 
     // write a function that takes an argument and returns the square of that arguemtn
 
-   
-    function name() {
-      return "Peter ";
+   function myName($name = null) {
+    if( myName == null) {
+      return "No Name Set";
+    } else {
+      return  "This is my first Function "  ;
     }
+  }
 
-    $length = strlen ("John");
-    echo name();
-    print $length;
+
+
+  echo myName("Peter");
+
+
+  function square($x) {
+    return sqrt($x);
+
+  }
+
+  echo square(36);
+   
+  
 
 
     ?>
   </body>
 </html>
+
+
+ <!-- function name() {
+      return "Peter ";
+    }
+
+    $length = strlen ("John");
+    echo name();
+    print $length; -->

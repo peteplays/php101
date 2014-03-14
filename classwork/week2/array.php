@@ -14,13 +14,21 @@
     // once the loop is complete remove the first and last elements of the array
     // print out the number of elements in the array
     
-     $name = 'Peter';
-     foreach ($name as $letters) {
-       
-     }
+    $name = 'Peter';
+
+    $exp = explode(' ', $name);
+    rsort($exp);
+
+    $exp = implode(' ', $exp);
+    echo $exp;
+    
 
 
-      for ($i <= 5; $i > 0; $i = $i - 5) {
+     
+    ?>
+  </body>
+</html>
+ <!-- for ($i <= 5; $i > 0; $i = $i - 5) {
             echo "<p>$i</p>";            
     }
 
@@ -38,8 +46,4 @@
 
 
       $partial = substr ($myName, 0, 3);  // this will only show 0 to 3 in an array
-      print $partial;
-
-    ?>
-  </body>
-</html>
+      print $partial; -->

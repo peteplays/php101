@@ -55,7 +55,8 @@
         // print out the winner of the hand
 
       foreach($pokerPlayers as $key => $player) {
-         
+         echo "<p>" .  $player['name'] . ' : ' ;
+          
           foreach($player as $prop => $value) {
 
           $playerCard = array();
@@ -87,7 +88,7 @@
        
        //echo $player['name'] . ' : ' . $player['bet'];
       // echo "</br>";
-       echo "<p>" . $playerCard['face'] . ' ' . $playerCard['card'] . "</p>";
+       echo $playerCard['face'] . ' ' . $playerCard['card'] . "</p>";
 
       }
     }
